@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конвертер валют</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Конвертер валют</h1>
+    <div class="input-container">
+      <input type="number" id="inputField" placeholder="Введите значение">
+    </div>
+    <div class="dropdown-container">
+        <select id="currencyOld" name="currencyOld">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="CNY">CNY</option>
+            <option value="CZK">CZK</option>
+            <option value="DKK">DKK</option>
+        </select>
+        <select id="currencyNew" name="currencyNew">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="CNY">CNY</option>
+            <option value="CZK">CZK</option>
+            <option value="DKK">DKK</option>
+        </select>
+    </div>
+    <button onclick="sendData()">Конвертировать</button>
+
+    <tr>
+        <td><input type="text" id="outputField" readonly></td>
+    </tr>
+ 
+    <div id="resultContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
